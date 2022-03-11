@@ -13,6 +13,7 @@ extension DesignSystem{
         case head
         case title
         case body
+        case authHead
         
         private var fontDescriptor: CustomFontDescriptor{
             switch self {
@@ -20,6 +21,8 @@ extension DesignSystem{
                 return CustomFontDescriptor(font: .bold, size: 24, style: .headline)
             case .title:
                 return CustomFontDescriptor(font: .regular, size: 18, style: .title1)
+            case .authHead:
+                return CustomFontDescriptor(font: .bold, size: 32, style: .title1)
             case .body:
                 return CustomFontDescriptor(font: .regular, size: 14, style: .body)
             

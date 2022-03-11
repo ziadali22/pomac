@@ -10,7 +10,6 @@
 		0059BA515575E144D77E8B46 /* Pods_pomac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1DFB176306BBDEC759D180F /* Pods_pomac.framework */; };
 		994EC29B27DBC6460048BAE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994EC29A27DBC6460048BAE4 /* AppDelegate.swift */; };
 		994EC29D27DBC6460048BAE4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994EC29C27DBC6460048BAE4 /* SceneDelegate.swift */; };
-		994EC29F27DBC6460048BAE4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994EC29E27DBC6460048BAE4 /* ViewController.swift */; };
 		994EC2A427DBC6470048BAE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 994EC2A327DBC6470048BAE4 /* Assets.xcassets */; };
 		994EC2A727DBC6470048BAE4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 994EC2A527DBC6470048BAE4 /* LaunchScreen.storyboard */; };
 		994EC2C327DBC7FC0048BAE4 /* APIRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994EC2B827DBC7FC0048BAE4 /* APIRequestHandler.swift */; };
@@ -28,6 +27,15 @@
 		994EC2DD27DBC8B20048BAE4 /* Almarai-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 994EC2D427DBC8B20048BAE4 /* Almarai-Regular.ttf */; };
 		994EC2DF27DBC8B20048BAE4 /* CustomFontDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994EC2D627DBC8B20048BAE4 /* CustomFontDescriptor.swift */; };
 		994EC2E027DBC8B20048BAE4 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994EC2D727DBC8B20048BAE4 /* Font.swift */; };
+		994EC2E527DBCE730048BAE4 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994EC2E327DBCE730048BAE4 /* LoginVC.swift */; };
+		994EC2E627DBCE730048BAE4 /* LoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 994EC2E427DBCE730048BAE4 /* LoginVC.xib */; };
+		994EC2E927DBD00F0048BAE4 /* ExUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994EC2E827DBD00F0048BAE4 /* ExUIView.swift */; };
+		994EC2EC27DBDB9A0048BAE4 /* RecipesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994EC2EA27DBDB9A0048BAE4 /* RecipesVC.swift */; };
+		994EC2ED27DBDB9A0048BAE4 /* RecipesVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 994EC2EB27DBDB9A0048BAE4 /* RecipesVC.xib */; };
+		994EC2F127DBDD1F0048BAE4 /* RecipesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994EC2EF27DBDD1F0048BAE4 /* RecipesTableViewCell.swift */; };
+		994EC2F227DBDD1F0048BAE4 /* RecipesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 994EC2F027DBDD1F0048BAE4 /* RecipesTableViewCell.xib */; };
+		994EC2F427DBDD950048BAE4 /* ExForNib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994EC2F327DBDD950048BAE4 /* ExForNib.swift */; };
+		994EC2F627DBE0D40048BAE4 /* RecipesVC+Func.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994EC2F527DBE0D40048BAE4 /* RecipesVC+Func.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,7 +44,6 @@
 		994EC29727DBC6460048BAE4 /* pomac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pomac.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		994EC29A27DBC6460048BAE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		994EC29C27DBC6460048BAE4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		994EC29E27DBC6460048BAE4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		994EC2A327DBC6470048BAE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		994EC2A627DBC6470048BAE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		994EC2A827DBC6470048BAE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -55,6 +62,15 @@
 		994EC2D427DBC8B20048BAE4 /* Almarai-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Almarai-Regular.ttf"; sourceTree = "<group>"; };
 		994EC2D627DBC8B20048BAE4 /* CustomFontDescriptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomFontDescriptor.swift; sourceTree = "<group>"; };
 		994EC2D727DBC8B20048BAE4 /* Font.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
+		994EC2E327DBCE730048BAE4 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		994EC2E427DBCE730048BAE4 /* LoginVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginVC.xib; sourceTree = "<group>"; };
+		994EC2E827DBD00F0048BAE4 /* ExUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExUIView.swift; sourceTree = "<group>"; };
+		994EC2EA27DBDB9A0048BAE4 /* RecipesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesVC.swift; sourceTree = "<group>"; };
+		994EC2EB27DBDB9A0048BAE4 /* RecipesVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecipesVC.xib; sourceTree = "<group>"; };
+		994EC2EF27DBDD1F0048BAE4 /* RecipesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesTableViewCell.swift; sourceTree = "<group>"; };
+		994EC2F027DBDD1F0048BAE4 /* RecipesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecipesTableViewCell.xib; sourceTree = "<group>"; };
+		994EC2F327DBDD950048BAE4 /* ExForNib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExForNib.swift; sourceTree = "<group>"; };
+		994EC2F527DBE0D40048BAE4 /* RecipesVC+Func.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RecipesVC+Func.swift"; sourceTree = "<group>"; };
 		C1DFB176306BBDEC759D180F /* Pods_pomac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pomac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -138,7 +154,8 @@
 		994EC2B127DBC65E0048BAE4 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				994EC29E27DBC6460048BAE4 /* ViewController.swift */,
+				994EC2E227DBCDE80048BAE4 /* Recipes */,
+				994EC2E127DBCDE40048BAE4 /* Auth */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -169,6 +186,7 @@
 		994EC2B527DBC6A00048BAE4 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				994EC2E727DBCFFF0048BAE4 /* Style */,
 				994EC2CB27DBC8B20048BAE4 /* DesignSystem */,
 				994EC2B627DBC7FC0048BAE4 /* Network */,
 			);
@@ -260,6 +278,44 @@
 			path = CustomFonts;
 			sourceTree = "<group>";
 		};
+		994EC2E127DBCDE40048BAE4 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				994EC2E327DBCE730048BAE4 /* LoginVC.swift */,
+				994EC2E427DBCE730048BAE4 /* LoginVC.xib */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		994EC2E227DBCDE80048BAE4 /* Recipes */ = {
+			isa = PBXGroup;
+			children = (
+				994EC2EE27DBDCDF0048BAE4 /* Cell */,
+				994EC2EA27DBDB9A0048BAE4 /* RecipesVC.swift */,
+				994EC2EB27DBDB9A0048BAE4 /* RecipesVC.xib */,
+				994EC2F527DBE0D40048BAE4 /* RecipesVC+Func.swift */,
+			);
+			path = Recipes;
+			sourceTree = "<group>";
+		};
+		994EC2E727DBCFFF0048BAE4 /* Style */ = {
+			isa = PBXGroup;
+			children = (
+				994EC2E827DBD00F0048BAE4 /* ExUIView.swift */,
+				994EC2F327DBDD950048BAE4 /* ExForNib.swift */,
+			);
+			path = Style;
+			sourceTree = "<group>";
+		};
+		994EC2EE27DBDCDF0048BAE4 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				994EC2EF27DBDD1F0048BAE4 /* RecipesTableViewCell.swift */,
+				994EC2F027DBDD1F0048BAE4 /* RecipesTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		ED5A562F4504177EE986956E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -329,9 +385,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				994EC2E627DBCE730048BAE4 /* LoginVC.xib in Resources */,
 				994EC2DD27DBC8B20048BAE4 /* Almarai-Regular.ttf in Resources */,
 				994EC2A727DBC6470048BAE4 /* LaunchScreen.storyboard in Resources */,
 				994EC2DB27DBC8B20048BAE4 /* Almarai-Bold.ttf in Resources */,
+				994EC2F227DBDD1F0048BAE4 /* RecipesTableViewCell.xib in Resources */,
+				994EC2ED27DBDB9A0048BAE4 /* RecipesVC.xib in Resources */,
 				994EC2A427DBC6470048BAE4 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -386,10 +445,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				994EC2D827DBC8B20048BAE4 /* DesignSystem.swift in Sources */,
-				994EC29F27DBC6460048BAE4 /* ViewController.swift in Sources */,
 				994EC2DF27DBC8B20048BAE4 /* CustomFontDescriptor.swift in Sources */,
 				994EC2C427DBC7FC0048BAE4 /* CodableInit.swift in Sources */,
+				994EC2E527DBCE730048BAE4 /* LoginVC.swift in Sources */,
+				994EC2F627DBE0D40048BAE4 /* RecipesVC+Func.swift in Sources */,
 				994EC2C827DBC7FC0048BAE4 /* URLRequestBuilder.swift in Sources */,
+				994EC2F127DBDD1F0048BAE4 /* RecipesTableViewCell.swift in Sources */,
 				994EC2C627DBC7FC0048BAE4 /* AlamofireResponse.swift in Sources */,
 				994EC2C927DBC7FC0048BAE4 /* UploadData.swift in Sources */,
 				994EC29B27DBC6460048BAE4 /* AppDelegate.swift in Sources */,
@@ -397,8 +458,11 @@
 				994EC2D927DBC8B20048BAE4 /* Colors.swift in Sources */,
 				994EC2CA27DBC7FC0048BAE4 /* ServerPaths.swift in Sources */,
 				994EC2DA27DBC8B20048BAE4 /* TypoGraphy.swift in Sources */,
+				994EC2EC27DBDB9A0048BAE4 /* RecipesVC.swift in Sources */,
+				994EC2F427DBDD950048BAE4 /* ExForNib.swift in Sources */,
 				994EC2E027DBC8B20048BAE4 /* Font.swift in Sources */,
 				994EC29D27DBC6460048BAE4 /* SceneDelegate.swift in Sources */,
+				994EC2E927DBD00F0048BAE4 /* ExUIView.swift in Sources */,
 				994EC2C327DBC7FC0048BAE4 /* APIRequestHandler.swift in Sources */,
 				994EC2C527DBC7FC0048BAE4 /* ResponseHandler.swift in Sources */,
 			);
