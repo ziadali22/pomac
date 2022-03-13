@@ -9,8 +9,7 @@ import Foundation
 extension LoginVC: LoginView{
     func sucessLogin() {
         self.openAlert(title: "Success", message: "success login", alertStyle: .alert, actionTitles: ["Go to main page"], actionStyles: [.default], actions: [{ _ in
-            let viewController = RecipesViewController()
-            self.show(viewController, sender: nil)
+            self.animation()
         }])
     }
     
