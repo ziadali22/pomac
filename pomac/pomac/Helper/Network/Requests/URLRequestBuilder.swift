@@ -1,0 +1,84 @@
+//
+//  RequestBuilderProtocol.swift
+//  SwiftCairo-App
+//
+//  Created by ziad on 3/11/22.
+//  Copyright © 2022 ziad. All rights reserved.
+//
+
+import Foundation
+import Alamofire
+
+protocol URLRequestBuilder: URLRequestConvertible, APIRequestHandler {
+    
+    var mainURL: URL { get }
+    var requestURL: URL { get }
+    // MARK: - Path
+    var path: String { get }
+    //Header
+    var headers: HTTPHeaders { get }
+    // MARK: - Parameters
+    var parameters: Parameters? { get }
+    
+    // MARK: - Methods
+    var method: HTTPMethod { get }
+    
+    var encoding: ParameterEncoding { get }
+    
+    var urlRequest: URLRequest { get }
+}
+
+
+extension URLRequestBuilder {
+    var encoding: ParameterEncoding {
+    
+        switch method {
+        case .get:
+            if parameters == nil {
+                return URLEncoding.default
+            }else{
+                return URLEncoding.queryString
+            }
+            
+        default:
+            return JSONEncoding.default
+        }
+    }
+    
+    var mainURL: URL  {
+        return URL(string: "https://api.npoint.io/")!
+    }
+    
+    var requestURL: URL {
+        if path.hasPrefix("https://api.npoint.io/"){
+            print(URL(string: path)!)
+            return URL(string: path)!
+        }else{
+            print(mainURL.appendingPathComponent(path))
+          return mainURL.appendingPathComponent(path)
+        }
+        
+    }
+    var headers: HTTPHeaders {
+        var header = HTTPHeaders()
+//        if let myHeader = UserDataActions.HeaderForRequestWithToken(){
+//            header = myHeader
+//        }
+        header["Accept"] = "application/json"
+        //header["X-localization"] = Language.currentLanguage()
+        //print(header)
+        return header
+    }
+    
+    var urlRequest: URLRequest {
+        var request = URLRequest(url: requestURL)
+        request.httpMethod = method.rawValue
+        headers.forEach { request.addValue($1, forHTTPHeaderField: $0) }
+        return request
+    }
+    
+    // MARK: - URLRequestConvertible
+    func asURLRequest() throws -> URLRequest {
+        return try encoding.encode(urlRequest, with: parameters)
+    }
+}
