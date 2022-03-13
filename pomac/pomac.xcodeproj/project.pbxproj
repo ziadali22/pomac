@@ -47,7 +47,20 @@
 		994EC31C27DD18F10048BAE4 /* exUiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994EC31B27DD18F10048BAE4 /* exUiViewController.swift */; };
 		994EC31E27DD1A830048BAE4 /* LoginVc+Delegation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994EC31D27DD1A830048BAE4 /* LoginVc+Delegation.swift */; };
 		994EC32027DD5AF90048BAE4 /* RecipesDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994EC31F27DD5AF90048BAE4 /* RecipesDetailsPresenter.swift */; };
+		994EC32827DE0E980048BAE4 /* pomacTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994EC32727DE0E980048BAE4 /* pomacTests.swift */; };
+		994EC33027DE0F6E0048BAE4 /* Recipes.json in Resources */ = {isa = PBXBuildFile; fileRef = 994EC32F27DE0F6E0048BAE4 /* Recipes.json */; };
+		994EC33227DE28F60048BAE4 /* extValidatoinModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994EC33127DE28F60048BAE4 /* extValidatoinModel.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		994EC32927DE0E980048BAE4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 994EC28F27DBC6460048BAE4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 994EC29627DBC6460048BAE4;
+			remoteInfo = pomac;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0752F7499962D268B38D4E47 /* Pods-pomac.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pomac.release.xcconfig"; path = "Target Support Files/Pods-pomac/Pods-pomac.release.xcconfig"; sourceTree = "<group>"; };
@@ -93,6 +106,10 @@
 		994EC31B27DD18F10048BAE4 /* exUiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = exUiViewController.swift; sourceTree = "<group>"; };
 		994EC31D27DD1A830048BAE4 /* LoginVc+Delegation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoginVc+Delegation.swift"; sourceTree = "<group>"; };
 		994EC31F27DD5AF90048BAE4 /* RecipesDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesDetailsPresenter.swift; sourceTree = "<group>"; };
+		994EC32527DE0E980048BAE4 /* pomacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pomacTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		994EC32727DE0E980048BAE4 /* pomacTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pomacTests.swift; sourceTree = "<group>"; };
+		994EC32F27DE0F6E0048BAE4 /* Recipes.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Recipes.json; sourceTree = "<group>"; };
+		994EC33127DE28F60048BAE4 /* extValidatoinModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extValidatoinModel.swift; sourceTree = "<group>"; };
 		C1DFB176306BBDEC759D180F /* Pods_pomac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pomac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -102,6 +119,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				0059BA515575E144D77E8B46 /* Pods_pomac.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		994EC32227DE0E980048BAE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				994EC29927DBC6460048BAE4 /* pomac */,
+				994EC32627DE0E980048BAE4 /* pomacTests */,
 				994EC29827DBC6460048BAE4 /* Products */,
 				ED5A562F4504177EE986956E /* Pods */,
 				65853AC7E7D5538CAF773072 /* Frameworks */,
@@ -130,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				994EC29727DBC6460048BAE4 /* pomac.app */,
+				994EC32527DE0E980048BAE4 /* pomacTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -357,6 +383,24 @@
 			path = Details;
 			sourceTree = "<group>";
 		};
+		994EC32627DE0E980048BAE4 /* pomacTests */ = {
+			isa = PBXGroup;
+			children = (
+				994EC32E27DE0F340048BAE4 /* fixJsonData */,
+				994EC32727DE0E980048BAE4 /* pomacTests.swift */,
+				994EC33127DE28F60048BAE4 /* extValidatoinModel.swift */,
+			);
+			path = pomacTests;
+			sourceTree = "<group>";
+		};
+		994EC32E27DE0F340048BAE4 /* fixJsonData */ = {
+			isa = PBXGroup;
+			children = (
+				994EC32F27DE0F6E0048BAE4 /* Recipes.json */,
+			);
+			path = fixJsonData;
+			sourceTree = "<group>";
+		};
 		ED5A562F4504177EE986956E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -388,6 +432,24 @@
 			productReference = 994EC29727DBC6460048BAE4 /* pomac.app */;
 			productType = "com.apple.product-type.application";
 		};
+		994EC32427DE0E980048BAE4 /* pomacTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 994EC32D27DE0E980048BAE4 /* Build configuration list for PBXNativeTarget "pomacTests" */;
+			buildPhases = (
+				994EC32127DE0E980048BAE4 /* Sources */,
+				994EC32227DE0E980048BAE4 /* Frameworks */,
+				994EC32327DE0E980048BAE4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				994EC32A27DE0E980048BAE4 /* PBXTargetDependency */,
+			);
+			name = pomacTests;
+			productName = pomacTests;
+			productReference = 994EC32527DE0E980048BAE4 /* pomacTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -400,6 +462,10 @@
 				TargetAttributes = {
 					994EC29627DBC6460048BAE4 = {
 						CreatedOnToolsVersion = 13.2.1;
+					};
+					994EC32427DE0E980048BAE4 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 994EC29627DBC6460048BAE4;
 					};
 				};
 			};
@@ -417,6 +483,7 @@
 			projectRoot = "";
 			targets = (
 				994EC29627DBC6460048BAE4 /* pomac */,
+				994EC32427DE0E980048BAE4 /* pomacTests */,
 			);
 		};
 /* End PBXProject section */
@@ -434,6 +501,14 @@
 				994EC2F227DBDD1F0048BAE4 /* RecipesTableViewCell.xib in Resources */,
 				994EC2A427DBC6470048BAE4 /* Assets.xcassets in Resources */,
 				994EC31127DC034D0048BAE4 /* RecipesViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		994EC32327DE0E980048BAE4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				994EC33027DE0F6E0048BAE4 /* Recipes.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -520,7 +595,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		994EC32127DE0E980048BAE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				994EC33227DE28F60048BAE4 /* extValidatoinModel.swift in Sources */,
+				994EC32827DE0E980048BAE4 /* pomacTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		994EC32A27DE0E980048BAE4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 994EC29627DBC6460048BAE4 /* pomac */;
+			targetProxy = 994EC32927DE0E980048BAE4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		994EC2A527DBC6470048BAE4 /* LaunchScreen.storyboard */ = {
@@ -710,6 +802,42 @@
 			};
 			name = Release;
 		};
+		994EC32B27DE0E980048BAE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4KH46FS8KZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pomacTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/pomac.app/pomac";
+			};
+			name = Debug;
+		};
+		994EC32C27DE0E980048BAE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4KH46FS8KZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pomacTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/pomac.app/pomac";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -727,6 +855,15 @@
 			buildConfigurations = (
 				994EC2AC27DBC6470048BAE4 /* Debug */,
 				994EC2AD27DBC6470048BAE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		994EC32D27DE0E980048BAE4 /* Build configuration list for PBXNativeTarget "pomacTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				994EC32B27DE0E980048BAE4 /* Debug */,
+				994EC32C27DE0E980048BAE4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
