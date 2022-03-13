@@ -11,25 +11,7 @@ import Foundation
 
 enum ServerPaths : String {
     
-    case login = "auth/login"
-    case forgetPassword = "auth/password/forget"
-    case checkCode = "auth/password/check"
-    case saveChanges = "auth/password/reset"
-    case register = "auth/register"
-    case getCategory = "categories"
-    case follow_unfollow = "follow-unfollow-category"
-    case intro = "setting/contact"
-    case myPosts = "posts"
-    case home = "home"
-    case contactUs = "post-contact"
-    case notifications = "notification"
-    case postDetail = "posts/"
-    case changePassword = "auth/change-password"
-    case deleteComment = "comments/"
-    case updateProfile = "auth/profile"
-    case reportComment = "report-comment/"
-    case myCategory = "post-categories"
-    case search = "search"
+    case home = "43427003d33f1f6b51cc"
     var value : String {
         return self.rawValue
     }

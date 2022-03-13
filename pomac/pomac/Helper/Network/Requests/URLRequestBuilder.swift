@@ -46,11 +46,11 @@ extension URLRequestBuilder {
     }
     
     var mainURL: URL  {
-        return URL(string: "http://fabric.panorama-q.com/api/")!
+        return URL(string: "https://api.npoint.io/")!
     }
     
     var requestURL: URL {
-        if path.hasPrefix("http://fabric.panorama-q.com/api/"){
+        if path.hasPrefix("https://api.npoint.io/"){
             print(URL(string: path)!)
             return URL(string: path)!
         }else{
@@ -59,16 +59,16 @@ extension URLRequestBuilder {
         }
         
     }
-//    var headers: HTTPHeaders {
-//        var header = HTTPHeaders()
+    var headers: HTTPHeaders {
+        var header = HTTPHeaders()
 //        if let myHeader = UserDataActions.HeaderForRequestWithToken(){
 //            header = myHeader
 //        }
-//        header["Accept"] = "application/json"
-//        header["X-localization"] = Language.currentLanguage()
-//        print(header)
-//        return header
-//    }
+        header["Accept"] = "application/json"
+        //header["X-localization"] = Language.currentLanguage()
+        //print(header)
+        return header
+    }
     
     var urlRequest: URLRequest {
         var request = URLRequest(url: requestURL)

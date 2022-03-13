@@ -8,15 +8,19 @@
 import UIKit
 import SkyFloatingLabelTextField
 class LoginVC: UIViewController {
-    // MARK: - Properties
+    // MARK: - Outlets
     @IBOutlet weak var loginText: UILabel!
     @IBOutlet weak var subDescriptionText: UILabel!
 
     @IBOutlet weak var emailTextField: SkyFloatingLabelTextField!
     @IBOutlet weak var passwordTextField: SkyFloatingLabelTextField!
+    
+    // MARK: - Properties
+    var presenter: AuthLoginRepresenter!
     // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        presenter = AuthLoginRepresenter(view: self)
         configureUI()
     }
     // MARK: - Configurations
@@ -30,7 +34,8 @@ class LoginVC: UIViewController {
     }
     
     @IBAction func loginAction(_ sender: Any) {
-        animation()
+        presenter.loginAction(email: emailTextField.text ?? "", password: passwordTextField.text ?? "")
+        //animation()
     }
     
     private func animation(){
@@ -51,7 +56,7 @@ class LoginVC: UIViewController {
                 self.subDescriptionText.alpha = 0
                 self.subDescriptionText.transform = CGAffineTransform(translationX:0, y: -200)
             }completion: { (_) in
-                let vc = RecipesVC()
+                let vc = RecipesViewController()
                 vc.modalPresentationStyle = .fullScreen
                 vc.modalTransitionStyle = .crossDissolve
                 self.present(vc, animated: true, completion: nil)
