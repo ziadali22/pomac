@@ -47,7 +47,7 @@ class AuthLoginRepresenter{
     func loginAction(email: String, password: String){
         do{
             let inputs = try ValidationLogin(email: email, password: password)
-            if inputs.email == "ziadali@gmail.com" && inputs.password == "1234"{
+            if inputs.email == "pomac@gmail.com" && inputs.password == "1234"{
                 view?.sucessLogin()
             }else{
                 view?.enterTheHardCodedEmailAndPassword()

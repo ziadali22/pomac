@@ -35,10 +35,9 @@ class LoginVC: UIViewController {
     
     @IBAction func loginAction(_ sender: Any) {
         presenter.loginAction(email: emailTextField.text ?? "", password: passwordTextField.text ?? "")
-        //animation()
     }
     
-    private func animation(){
+    func animation(){
         
         UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 0.5, options: .curveEaseOut) {
             self.loginText.transform = CGAffineTransform(translationX: -30, y: 0)
@@ -56,10 +55,8 @@ class LoginVC: UIViewController {
                 self.subDescriptionText.alpha = 0
                 self.subDescriptionText.transform = CGAffineTransform(translationX:0, y: -200)
             }completion: { (_) in
-                let vc = RecipesViewController()
-                vc.modalPresentationStyle = .fullScreen
-                vc.modalTransitionStyle = .crossDissolve
-                self.present(vc, animated: true, completion: nil)
+                let viewController = RecipesViewController()
+                self.show(viewController, sender: nil)
             }
         }
         
