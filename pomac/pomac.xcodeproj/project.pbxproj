@@ -52,6 +52,9 @@
 		994EC33227DE28F60048BAE4 /* extValidatoinModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994EC33127DE28F60048BAE4 /* extValidatoinModel.swift */; };
 		994EC33A27DE38D20048BAE4 /* pomacUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994EC33927DE38D20048BAE4 /* pomacUITests.swift */; };
 		994EC33C27DE38D20048BAE4 /* pomacUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994EC33B27DE38D20048BAE4 /* pomacUITestsLaunchTests.swift */; };
+		99598AC92836933200B2C9BE /* VariousWheelSpikeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99598AC72836933200B2C9BE /* VariousWheelSpikeViewController.swift */; };
+		99598ACA2836933200B2C9BE /* VariousWheelSpikeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99598AC82836933200B2C9BE /* VariousWheelSpikeViewController.xib */; };
+		99598ACC2836946E00B2C9BE /* SFWConfiguration+VariousWheelSpike.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99598ACB2836946E00B2C9BE /* SFWConfiguration+VariousWheelSpike.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -122,6 +125,9 @@
 		994EC33727DE38D20048BAE4 /* pomacUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pomacUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		994EC33927DE38D20048BAE4 /* pomacUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pomacUITests.swift; sourceTree = "<group>"; };
 		994EC33B27DE38D20048BAE4 /* pomacUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pomacUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		99598AC72836933200B2C9BE /* VariousWheelSpikeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VariousWheelSpikeViewController.swift; sourceTree = "<group>"; };
+		99598AC82836933200B2C9BE /* VariousWheelSpikeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VariousWheelSpikeViewController.xib; sourceTree = "<group>"; };
+		99598ACB2836946E00B2C9BE /* SFWConfiguration+VariousWheelSpike.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SFWConfiguration+VariousWheelSpike.swift"; sourceTree = "<group>"; };
 		C1DFB176306BBDEC759D180F /* Pods_pomac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pomac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -185,7 +191,6 @@
 			isa = PBXGroup;
 			children = (
 				994EC2B527DBC6A00048BAE4 /* Helper */,
-				994EC2B027DBC6590048BAE4 /* Model */,
 				994EC2AF27DBC6530048BAE4 /* Scenes */,
 				994EC2AE27DBC64F0048BAE4 /* Core */,
 				994EC2B427DBC6920048BAE4 /* Resources */,
@@ -206,9 +211,13 @@
 		994EC2AF27DBC6530048BAE4 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				994EC2B027DBC6590048BAE4 /* Model */,
 				994EC2B127DBC65E0048BAE4 /* View */,
 				994EC2B227DBC6620048BAE4 /* Presenter */,
 				994EC2B327DBC6670048BAE4 /* Interactor */,
+				99598AC72836933200B2C9BE /* VariousWheelSpikeViewController.swift */,
+				99598AC82836933200B2C9BE /* VariousWheelSpikeViewController.xib */,
+				99598ACB2836946E00B2C9BE /* SFWConfiguration+VariousWheelSpike.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -552,6 +561,7 @@
 				994EC2A727DBC6470048BAE4 /* LaunchScreen.storyboard in Resources */,
 				994EC2DB27DBC8B20048BAE4 /* Almarai-Bold.ttf in Resources */,
 				994EC2F227DBDD1F0048BAE4 /* RecipesTableViewCell.xib in Resources */,
+				99598ACA2836933200B2C9BE /* VariousWheelSpikeViewController.xib in Resources */,
 				994EC2A427DBC6470048BAE4 /* Assets.xcassets in Resources */,
 				994EC31127DC034D0048BAE4 /* RecipesViewController.xib in Resources */,
 			);
@@ -628,6 +638,7 @@
 				994EC2C427DBC7FC0048BAE4 /* CodableInit.swift in Sources */,
 				994EC31827DD14340048BAE4 /* AuthLoginRepresenter.swift in Sources */,
 				994EC32027DD5AF90048BAE4 /* RecipesDetailsPresenter.swift in Sources */,
+				99598ACC2836946E00B2C9BE /* SFWConfiguration+VariousWheelSpike.swift in Sources */,
 				994EC2E527DBCE730048BAE4 /* LoginVC.swift in Sources */,
 				994EC2C827DBC7FC0048BAE4 /* URLRequestBuilder.swift in Sources */,
 				994EC31027DC034D0048BAE4 /* RecipesViewController.swift in Sources */,
@@ -646,6 +657,7 @@
 				994EC2FC27DBEAAD0048BAE4 /* RecipesInteractor.swift in Sources */,
 				994EC30227DBEE790048BAE4 /* RecipesModel.swift in Sources */,
 				994EC2F427DBDD950048BAE4 /* ExForNib.swift in Sources */,
+				99598AC92836933200B2C9BE /* VariousWheelSpikeViewController.swift in Sources */,
 				994EC2E027DBC8B20048BAE4 /* Font.swift in Sources */,
 				994EC29D27DBC6460048BAE4 /* SceneDelegate.swift in Sources */,
 				994EC2E927DBD00F0048BAE4 /* ExUIView.swift in Sources */,
@@ -915,9 +927,10 @@
 		994EC34027DE38D20048BAE4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 4KH46FS8KZ;
+				DEVELOPMENT_TEAM = 57UD3G5J58;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pomacUITests;
@@ -932,9 +945,10 @@
 		994EC34127DE38D20048BAE4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 4KH46FS8KZ;
+				DEVELOPMENT_TEAM = 57UD3G5J58;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pomacUITests;
