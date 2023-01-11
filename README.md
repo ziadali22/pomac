@@ -1,7 +1,7 @@
 # pomac
 
 ## Login hardCode email: pomac@gmail.com
-## Login hardCode email: 1234
+## Login hardCode password: 1234
 
 i used in this task : 
   pod SkyFloatingLabelTextField
