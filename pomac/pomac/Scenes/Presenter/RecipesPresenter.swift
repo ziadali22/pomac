@@ -30,8 +30,8 @@ class RecipesPresenter {
     }
     
     func viewDidload(){
-        getRecipesData()
-        //getRecipesDat()
+        //getRecipesData()
+        getRecipesDat()
     }
     func getRecipesData(){
         view?.showIndicator()
@@ -47,27 +47,27 @@ class RecipesPresenter {
         }
     }
     
-//
-//        func getRecipesDat(){
-//            self.view?.showIndicator()
-//            RequestRouter.home.send(RecipesModelArray.self, then: handleGetResponse)
-//        }
-//        var handleGetResponse: HandleResponse<RecipesModelArray> {
-//            return { [weak self] (response) in
-//                guard let self = self else {return}
-//                self.view?.hideIndicator()
-//                switch response {
-//                case .failure(let error):
-//                    self.view?.showError(error: String(describing: error))
-//                    print(error.localizedDescription)
-//                case .success(let model):
-//                    self.recipes = model.data
-//                    self.view?.fetchDataSuccess()
-//                    print(self.recipes)
-//
-//                }
-//            }
-//        }
+    
+    func getRecipesDat(){
+        self.view?.showIndicator()
+        RequestRouter.home.send([RecipesModel].self, then: handleGetResponse)
+    }
+    var handleGetResponse: HandleResponse<[RecipesModel]> {
+        return { [weak self] (response) in
+            guard let self = self else {return}
+            self.view?.hideIndicator()
+            switch response {
+            case .failure(let error):
+                self.view?.showError(error: String(describing: error))
+                print(error.localizedDescription)
+            case .success(let model):
+                self.recipes = model
+                self.view?.fetchDataSuccess()
+                print(self.recipes)
+
+            }
+        }
+    }
     
     
     func getRecipesCount() -> Int{

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VariousWheelSpikeViewController" customModule="pomac" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="wheelControl" destination="LFC-bk-3Xk" id="tOr-We-vII"/>
+                <outlet property="wrapperView" destination="wzj-2B-eLF" id="36g-Mz-a1k"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wzj-2B-eLF">
+                    <rect key="frame" x="57" y="84" width="300" height="300"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundCircle" translatesAutoresizingMaskIntoConstraints="NO" id="mqN-ZL-AqB">
+                            <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
+                        </imageView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LFC-bk-3Xk" customClass="SwiftFortuneWheel" customModule="SwiftFortuneWheel">
+                            <rect key="frame" x="20" y="20" width="260" height="260"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="LFC-bk-3Xk" secondAttribute="trailing" constant="20" id="0OB-ve-Xgu"/>
+                        <constraint firstAttribute="width" constant="300" id="8gl-p2-sEC"/>
+                        <constraint firstItem="LFC-bk-3Xk" firstAttribute="top" secondItem="wzj-2B-eLF" secondAttribute="top" constant="20" id="BLT-AN-BtK"/>
+                        <constraint firstItem="mqN-ZL-AqB" firstAttribute="top" secondItem="wzj-2B-eLF" secondAttribute="top" id="OZS-xy-hlI"/>
+                        <constraint firstItem="LFC-bk-3Xk" firstAttribute="leading" secondItem="wzj-2B-eLF" secondAttribute="leading" constant="20" id="QVI-vc-XRt"/>
+                        <constraint firstAttribute="bottom" secondItem="mqN-ZL-AqB" secondAttribute="bottom" id="dLx-ak-DZR"/>
+                        <constraint firstAttribute="bottom" secondItem="LFC-bk-3Xk" secondAttribute="bottom" constant="20" id="fSs-Sf-eZR"/>
+                        <constraint firstItem="mqN-ZL-AqB" firstAttribute="leading" secondItem="wzj-2B-eLF" secondAttribute="leading" id="obh-1d-vDL"/>
+                        <constraint firstAttribute="width" secondItem="wzj-2B-eLF" secondAttribute="height" id="vFU-Ho-UWE"/>
+                        <constraint firstAttribute="trailing" secondItem="mqN-ZL-AqB" secondAttribute="trailing" id="zU7-U2-Wwr"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lxg-OI-ueo">
+                    <rect key="frame" x="132" y="408" width="150" height="40"/>
+                    <color key="backgroundColor" red="0.90196078430000004" green="0.1764705882" blue="0.16862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="150" id="cK1-d9-t9U"/>
+                        <constraint firstAttribute="height" constant="40" id="vZx-Q5-BsE"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                    <state key="normal" title="Rotate">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="rotateTap:" destination="-1" eventType="touchUpInside" id="1OY-E5-lQL"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Lxg-OI-ueo" firstAttribute="top" secondItem="wzj-2B-eLF" secondAttribute="bottom" constant="24" id="79k-uj-8xP"/>
+                <constraint firstItem="wzj-2B-eLF" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="40" id="8Bj-jf-f9L"/>
+                <constraint firstItem="Lxg-OI-ueo" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Onx-aa-zY0"/>
+                <constraint firstItem="wzj-2B-eLF" firstAttribute="width" secondItem="wzj-2B-eLF" secondAttribute="height" id="RDz-8j-hZM"/>
+                <constraint firstItem="wzj-2B-eLF" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="fQb-cz-lDD"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="110"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="backgroundCircle" width="286" height="286"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

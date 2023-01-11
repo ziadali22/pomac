@@ -3,12 +3,14 @@ PODS:
   - IQKeyboardManager (6.5.9)
   - Kingfisher (7.1.1)
   - SkyFloatingLabelTextField (4.0.0)
+  - SwiftFortuneWheel (1.4.1)
 
 DEPENDENCIES:
   - Alamofire (~> 4.9.1)
   - IQKeyboardManager (~> 6.5.6)
   - Kingfisher
   - SkyFloatingLabelTextField
+  - SwiftFortuneWheel
 
 SPEC REPOS:
   trunk:
@@ -16,13 +18,15 @@ SPEC REPOS:
     - IQKeyboardManager
     - Kingfisher
     - SkyFloatingLabelTextField
+    - SwiftFortuneWheel
 
 SPEC CHECKSUMS:
   Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
   IQKeyboardManager: 241cc94ccabc9deb8f8bd7d12f00d73288d13ecc
   Kingfisher: f738f9c4a3415823b8e2985d10aa2d6a9f37bc4d
   SkyFloatingLabelTextField: 79ddc40e4ad59707fedbb48d605417aee48bb78a
+  SwiftFortuneWheel: abfc32b8245ff058d3f714b911646837f1273cc8
 
-PODFILE CHECKSUM: 1e9345d4f59c7ceb201adaa7a75f34d162464567
+PODFILE CHECKSUM: 493136efed4c10816379c062bb2e8e5b31cc7b64
 
-COCOAPODS: 1.11.2
+COCOAPODS: 1.11.3
